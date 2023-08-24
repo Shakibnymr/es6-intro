@@ -5,17 +5,20 @@ b) check if the length of each element is even , push elements with even length 
 // */ 
 
 const friends = ['efu', 'rakib', 'noyon', 'babu', 'axad', 'xavi'];
-
 const realFriends = [];
-const findFriend = friends => {
-    for (const friend of friends) {
-       if (friend.length === 4){
-        return realFriends.push(friend);
-       };
-       
-    }
+function findFriends(friends){
+    
+        for (const friend of friends) {
+           if (friend.length%2 ==0){
+             realFriends.push(friend);
+            //  console.log(realFriends);
+           };
+           
+        }
+    return realFriends
 }
-const real = findFriend(friends);
+
+const real = findFriends(friends);
 console.log(real)
 
 
